@@ -5,17 +5,23 @@
        <template repeat.for="row of router.navigation">
           <a class="item ${row.isActive ? 'active' : ''}" href.bind="row.href">${row.title}</a>
         </template>
-</div>
+        <div class="right menu">
+          <div class="item">
+            <a class="ui button" href="https://github.com/davidpurkiss"><i class="github icon"></i>Github</a>
+          </div>
+    </div>
+  </div>
 </div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <template repeat.for="row of router.navigation">
-          <a class="item ${row.isActive ? 'active' : ''}" href.bind="row.href">${row.title}</a>
+      <a class="item ${row.isActive ? 'active' : ''}" href.bind="row.href">${row.title}</a>
         </template>
+      <a class="item" href="https://github.com/davidpurkiss">Github</a>
 </div>
 
-<div class="ui inverted vertical masthead center aligned segment">
+<div class="ui inverted vertical masthead center aligned segment" style="background:url(assets/images/Victoria,_British_Columbia_Skyline_at_Twilight.jpg) center no-repeat">
 
     <div class="ui container">
       <div class="ui large secondary inverted pointing menu">
@@ -25,6 +31,9 @@
          <template repeat.for="row of router.navigation">
           <a class="item ${row.isActive ? 'active' : ''}" href.bind="row.href">${row.title}</a>
         </template>
+        <div class="right item">
+         <a class="ui inverted button" href="https://github.com/davidpurkiss"><i class="github icon"></i>Github</a>
+        </div>
       </div>
     </div>
 
@@ -33,7 +42,7 @@
         David Purkiss
       </h1>
       <h2>Some info about me. Please have a look around.</h2>
-      <div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+      <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
     </div>
 
   </div>

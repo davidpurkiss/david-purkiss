@@ -1,5 +1,5 @@
 <template>
-        <div id="current-tech" class="ui vertical stripe segment inverted">
+        <div id="anchor-current-tech" class="ui vertical stripe segment inverted">
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
                     <div class="center aligned column">
@@ -8,11 +8,11 @@
                 </div>
                 <div class="row">
                     <div class="fourteen wide column">
-                        <div class="ui four cards">
-                            <div class="card" repeat.for="tech of currentTech">
+                        <div class="ui four stackable cards">
+                            <div class="fluid card" repeat.for="tech of currentTech">
                                 <div class="content">
                                     <a href.bind="tech.link">
-                                    <img class="ui medium bordered" src.bind="tech.imageSrc">
+                                    <img class="ui middle aligned medium image" src.bind="tech.imageSrc">
                                     </a>
                                 </div>
                                 <div class="extra content">
@@ -25,11 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="center aligned column">
-                    <a class="ui huge button">Check Them Out</a>
-                    </div>
-                </div>
+                
              </div>
         </div>
 </template>

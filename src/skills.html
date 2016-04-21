@@ -1,6 +1,26 @@
 <template>
-  <section id="skills" class="au-animate">
-    <h2>SKills</h2>
-    
-  </section>
+  <div id="anchor-skills" class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+        <div class="row">
+            <div class="center aligned column">
+              <h3 class="ui header">Skills</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="center aligned column">
+              <div class="ui two column stackable grid" >
+                <div repeat.for="skill of skills" class="eight wide column" style="display:inline-block" >
+                    <div class="ui right pointing label" style="float:left;min-width:200px" >
+                      ${skill.name}
+                    </div>
+                      <div class="ui circular labels" >
+                          <a repeat.for="i of skill.rank" class="ui teal empty circular label"></a>
+                          <a repeat.for="i of 10 - skill.rank" class="ui grey empty circular label"></a>
+                      </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
 </template>

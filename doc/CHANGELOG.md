@@ -1,3 +1,16 @@
+### 1.0.1 (2016-04-21)
+
+
+#### Bug Fixes
+
+* **welcome:** fix profile image link ([73360b2f](http://github.com/aurelia/skeleton-navigation-typescript/commit/73360b2f8dc66eb7d55960887e421caf08739cfe))
+
+
+#### Features
+
+* **all:** implement initial version ([7570ca4d](http://github.com/aurelia/skeleton-navigation-typescript/commit/7570ca4db15cb7f490282ab0d105cf29f16c8ac4))
+
+
 ## 1.0.0 (2016-04-21)
 
 
