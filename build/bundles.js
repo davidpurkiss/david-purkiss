@@ -4,7 +4,21 @@ module.exports = {
       "includes": [
         "[*.js]",
         "*.html!text",
-        "*.css!text"
+        "*.css!text",
+      ],
+      "options": {
+        "inject": true,
+        "minify": true,
+        "depCache": true,
+        "rev": false
+      }
+    },
+    "dist/libs": {
+      "includes": [
+        "semantic-ui",
+        "semantic-ui/semantic.min.css!text",
+        "fetch",
+        "text"
       ],
       "options": {
         "inject": true,
@@ -28,7 +42,7 @@ module.exports = {
         "aurelia-history-browser",
         "aurelia-logging-console",
         "bootstrap",
-        "bootstrap/css/bootstrap.css!text"
+        "bootstrap/css/bootstrap.css!text",
       ],
       "options": {
         "inject": true,

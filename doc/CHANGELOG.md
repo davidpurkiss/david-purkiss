@@ -1,3 +1,11 @@
+## 1.0.0 (2016-04-21)
+
+
+#### Features
+
+* **all:** implement initial version ([7570ca4d](http://github.com/aurelia/skeleton-navigation-typescript/commit/7570ca4db15cb7f490282ab0d105cf29f16c8ac4))
+
+
 ### 1.0.0-beta.1.1.5
 
 * improve test setup
